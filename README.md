@@ -1,4 +1,4 @@
-# Bootstrap Model Streaming
+# Bootstrap Online Inference
 This repository illustrates a simple online inference workflow utilizing <a href="https://github.com/feast-dev/feast">Feast</a> for feature serving and <a href="https://github.com/mlflow/mlflow">MLFlow</a> for model serving.  We demonstrate training a simple weather model utilizing <a href="https://github.com/jdb78/pytorch-forecasting">PyTorch</a> and deploying for real-time inference.
 
 This document is a work in progress.
