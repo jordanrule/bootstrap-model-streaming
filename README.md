@@ -24,18 +24,18 @@ Install a RabbitMQ instance:
 kubectl apply -f "https://raw.githubusercontent.com/jordanrule/bootstrap-model-streaming/main/manifests/rabbitmq.yaml"
 ```
 
-## Spark
+### Spark
 
 <a href="https://github.com/kubernetes/examples/tree/master/staging/spark">Spark on K8s</a>
 
-## Feast
+### Feast
 
 <a href="https://github.com/feast-dev/feast/tree/master/infra/charts/feast">Feast on K8s</a>
 
-# Training
+## Training
 
 WIP
 
-# Serving
+## Serving
 
 WIP
