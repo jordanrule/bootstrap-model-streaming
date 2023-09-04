@@ -25,8 +25,28 @@ minikube start
 
 ## Training
 
-WIP
+### Populate Training Data
+
+Materialize a historical time series in Feast.
+
+### Train Model
+
+Use PyTorch to fit a LSTM model using Feast for online training.
+
+### Validate Model
+
+Use PyTorch on a train/test split to manage bias/variance tradeoff.
 
 ## Serving
 
-WIP
+### Deploy Container
+
+Use <a href="https://mlflow.org/docs/latest/projects.html#project-docker-container-environments">MLFlow</a> to build docker container.  Deploy container to Minikube.
+
+### Online Inference
+
+Populate new values in the time series utilizing Spark streaming and note updated model inferences in real-time.
+
+### Monitor Model
+
+Utilize <a href="https://github.com/evidentlyai/evidently/blob/main/examples/integrations/mlflow_logging/historical_drift_visualization.ipynb">Evidently</a> to monitor data drift.
