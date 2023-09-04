@@ -1,6 +1,8 @@
 # Bootstrap Model Streaming
 Many organizations have a well-defined methodology for offline model inference, processing historical data from a data warehouse with batch processing, but struggle to deploy an appropriate infrastructure and workflow for online model inference via real-time stream processing.  This repository exists to demonstrate a sample online inference workflow utilizing <a href="https://github.com/apache/spark">Spark</a> for streaming transformation, <a href="https://github.com/feast-dev/feast">Feast</a> for feature serving, <a href="https://github.com/mlflow/mlflow">MLFlow</a> for model serving, and <a href="https://github.com/kubernetes/minikube">Minikube</a> for provisioning.  After provisioning, we demonstrate training a simple weather model utilizing <a href="https://github.com/jdb78/pytorch-forecasting">PyTorch</a> and deploying it for real-time inference.
 
+This document is a work in progress.
+
 ## Provisioning
 
 ### Minikube
