@@ -7,7 +7,27 @@ This document is a work in progress.
 
 ### Populate Training Data
 
-Materialize a historical time series in <a href="https://docs.feast.dev/getting-started/quickstart">Feast</a>.
+Weather data is provided by <a href="https://www.ncei.noaa.gov/cdo-web/datasets">NOAA</a>, a sample dataset for Austin-Bergstrom International Airport is provided.
+
+Create a virtualenv to utilize Feast:
+```
+python -m venv ~/feast
+source ~/feast/bin/activate
+```
+
+Install Feast:
+```
+pip install feast
+feast init austin_weather
+cd austin_weather/feature_repo
+# copy weather data 
+```
+
+Define the online feature store:
+
+```
+TBD
+```
 
 ### Train Model
 
