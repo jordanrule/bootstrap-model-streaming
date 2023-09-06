@@ -58,7 +58,7 @@ features = store.get_historical_features(
 
 ### Train Model
 
-Use PyTorch to fit a LSTM model using Feast for online training.
+Use PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">fit a LSTM model</a> using Feast for online training.
 
 ### Validate Model
 
