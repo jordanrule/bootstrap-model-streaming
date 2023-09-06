@@ -20,7 +20,7 @@ Install Feast:
 pip install feast
 feast init austin_weather
 cd austin_weather/feature_repo
-# copy weather data 
+wget -O data/austin_weather.parquet https://github.com/jordanrule/bootstrap-online-inference/raw/main/data/austin_weather.parquet
 ```
 
 Define the online feature store:
