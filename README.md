@@ -89,7 +89,7 @@ TBD
 
 ### Serve Model
 
-Use <a href="https://mlflow.org/docs/latest/projects.html](https://mlflow.org/docs/latest/rest-api.html">MLFlow rest api</a> to serve.
+Use <a href="https://mlflow.org/docs/latest/rest-api.html">MLFlow rest api</a> to serve.
 
 ### Online Inference
 
