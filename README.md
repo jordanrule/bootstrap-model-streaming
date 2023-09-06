@@ -21,13 +21,41 @@ pip install feast
 feast init austin_weather
 cd austin_weather/feature_repo
 wget -O data/austin_weather.parquet https://github.com/jordanrule/bootstrap-online-inference/raw/main/data/austin_weather.parquet
-```
-
-Define the online feature store:
 
 ```
-TBD
+
+Define the feature store:
+
 ```
+wget -O weather_repo.py https://github.com/jordanrule/bootstrap-online-inference/raw/main/feast/weather_repo.py
+feast materialize 2020-01-01T00:00:00 2023-01-01T00:00:00
+feast apply
+```
+
+A sample query from our feature store is defined below:
+
+```
+store = FeatureStore(repo_path=".")
+feature_service = store.get_feature_service("weather_stats_online")
+entity_df = pd.DataFrame.from_dict(
+    {
+        "location": [
+        	'Austin', 
+        	'Austin', 
+        	'Austin',
+        ],
+        "event_timestamp": [
+            datetime(2021, 4, 12, 10, 59, 42),
+            datetime(2021, 4, 12, 8, 12, 10),
+            datetime(2021, 4, 12, 16, 40, 26),
+        ],
+    }
+)
+features = store.get_historical_features(
+    features=feature_service, 
+    entity_df=entity_df,
+)
+ ```
 
 ### Train Model
 
