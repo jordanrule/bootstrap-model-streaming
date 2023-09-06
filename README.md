@@ -56,6 +56,8 @@ features = store.get_historical_features(
 )
  ```
 
+Note that a production deployment could <a href="https://docs.feast.dev/getting-started/concepts/feature-retrieval">utilize SQL</a> for better performance, but for our local deployment we will load the parquet file directly for training and return to our feature store for online inference.
+
 ### Train Model
 
 Use PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">fit a LSTM model</a> using Feast for online training.
