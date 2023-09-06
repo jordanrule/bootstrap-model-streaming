@@ -39,9 +39,9 @@ feature_service = store.get_feature_service("weather_stats_online")
 entity_df = pd.DataFrame.from_dict(
     {
         "location": [
-        	'Austin', 
-        	'Austin', 
-        	'Austin',
+            'Austin', 
+            'Austin', 
+            'Austin',
         ],
         "event_timestamp": [
             datetime(2021, 4, 12, 10, 59, 42),
