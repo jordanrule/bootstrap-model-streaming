@@ -79,7 +79,7 @@ Epoch 30: train RMSE 2.3856, test RMSE 2.3761
 Epoch 40: train RMSE 2.3241, test RMSE 2.3244
 ```
 
-This is a good model as it generates a comparable RMSE between the train and test dataset, but let's see if we can utilize <a href="https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d">advanced techniques from NLP</a> such as attention to capture further elements of the dataset such as seasonality and improve our RMSE.
+This is a good model as it generates a comparable RMSE between the train and test dataset, but let's see if we can utilize <a href="https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d">advanced techniques from NLP</a> to capture elements of the dataset such as seasonality and improve our RMSE.
 
 ### Improve Model
 
