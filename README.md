@@ -68,7 +68,7 @@ Use PyTorch on a train/test split to manage bias/variance tradeoff in <a href="h
 
 ### Serve Model
 
-Use <a href="[https://mlflow.org/docs/latest/projects.html](https://mlflow.org/docs/latest/rest-api.html)">MLFlow test api</a> to serve.
+Use <a href="https://mlflow.org/docs/latest/projects.html](https://mlflow.org/docs/latest/rest-api.html">MLFlow rest api</a> to serve.
 
 ### Online Inference
 
