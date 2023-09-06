@@ -60,11 +60,30 @@ Note that a production deployment could <a href="https://docs.feast.dev/getting-
 
 ### Train Model
 
-Use PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">fit a LSTM model</a> using Feast for online training.
+Next we utilize PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">fit a simple LSTM model</a>:
 
-### Validate Model
+```
+pip install torch
+pip install matplotlib
+wget -O simple_lstm.py https://github.com/jordanrule/bootstrap-online-inference/raw/main/torch/simple_lstm.py
+python simple_lstm.py
+```
 
-Use PyTorch on a train/test split to manage bias/variance tradeoff in <a href="https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d">adding model complexity</a>.
+![Weather LSTM](https://github.com/jordanrule/bootstrap-online-inference/raw/main/torch/simple_lstm.png)
+
+```
+Epoch 0: train RMSE 6.2340, test RMSE 7.2797
+Epoch 10: train RMSE 2.4932, test RMSE 2.4385
+Epoch 20: train RMSE 2.4535, test RMSE 2.4168
+Epoch 30: train RMSE 2.3856, test RMSE 2.3761
+Epoch 40: train RMSE 2.3241, test RMSE 2.3244
+```
+
+This is a good model as it generates a comparable RMSE between the train and test dataset, but let's see if we can utilize <a href="https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d">advanced techniques from NLP</a> such as attention to capture further elements of the dataset such as seasonality and improve our RMSE.
+
+### Improve Model
+
+Use PyTorch on a train/test split to manage bias/variance tradeoff in <a href="">adding model complexity</a>.
 
 ## Deploy
 
