@@ -83,7 +83,7 @@ This is a good model as it generates a comparable RMSE between the train and tes
 
 ### Improve Model
 
-Use PyTorch on a train/test split to manage bias/variance tradeoff in <a href="">adding model complexity</a>.
+TBD
 
 ## Deploy
 
