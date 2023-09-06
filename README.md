@@ -62,13 +62,13 @@ Use PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-
 
 ### Validate Model
 
-Use PyTorch on a train/test split to manage bias/variance tradeoff.
+Use PyTorch on a train/test split to manage bias/variance tradeoff in <a href="https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d">adding model complexity</a>.
 
 ## Deploy
 
 ### Serve Model
 
-Use <a href="https://mlflow.org/docs/latest/projects.html#project-docker-container-environments">MLFlow</a> to serve.
+Use <a href="[https://mlflow.org/docs/latest/projects.html](https://mlflow.org/docs/latest/rest-api.html)">MLFlow test api</a> to serve.
 
 ### Online Inference
 
