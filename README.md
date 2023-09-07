@@ -90,6 +90,28 @@ wget -O darnn.py https://github.com/jordanrule/bootstrap-online-inference/raw/ma
 python darnn.py
 ```
 
+![Weather DA-RNN](https://github.com/jordanrule/bootstrap-online-inference/raw/main/torch/darnn.png)
+
+```
+==> Load dataset ...
+==> Initialize DA-RNN model ...
+==> Use accelerator:  cpu
+==> Start training ...
+Epochs:  0  Iterations:  197  Loss:  137.73516625438245
+Epochs:  1  Iterations:  394  Loss:  52.58221730847044
+Epochs:  2  Iterations:  591  Loss:  19.347244980371542
+Epochs:  3  Iterations:  788  Loss:  8.870222825386803
+Epochs:  4  Iterations:  985  Loss:  4.562742261868443
+Epochs:  5  Iterations:  1182  Loss:  4.861971211009824
+Epochs:  6  Iterations:  1379  Loss:  2.3649043315255702
+Epochs:  7  Iterations:  1576  Loss:  1.5880264813070974
+Epochs:  8  Iterations:  1773  Loss:  1.2077774004585247
+Epochs:  9  Iterations:  1970  Loss:  1.1395469135817538
+Finished Training
+```
+
+We have significantly improved on our RMSE, which is a demonstration of how utilizing SOTA models can improve on model accuracy.  We may want to take additional steps to ensure the RMSE numbers are comparable such as ensuring our train/test methodology is entirely consistent, but this model is fine as a prototype.  The next step is to deploy our model in a reproducible manner for online inference. 
+
 ## Deploy
 
 ### Serve Model
