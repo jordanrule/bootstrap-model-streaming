@@ -79,11 +79,16 @@ Epoch 30: train RMSE 2.3856, test RMSE 2.3761
 Epoch 40: train RMSE 2.3241, test RMSE 2.3244
 ```
 
-This is a good model as it generates a comparable RMSE between the train and test dataset, but let's see if we can utilize <a href="https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d">advanced techniques from NLP</a> to capture elements of the dataset such as seasonality and improve our RMSE.
+This is a good model as it generates a comparable RMSE between the train and test dataset, but let's see if we can utilize an attention mechanism to capture elements of the dataset such as seasonality and improve our RMSE.
 
 ### Improve Model
 
-TBD
+We utilize the <a href="https://github.com/Zhenye-Na/DA-RNN/tree/master">DA-RNN</a> model by developed in "A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction" (arXiv preprint arXiv:1704.02971 (2017)) to try to improve on our initial model.
+
+```
+wget -O darnn.py https://github.com/jordanrule/bootstrap-online-inference/raw/main/torch/darnn.py
+python darnn.py
+```
 
 ## Deploy
 
