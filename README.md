@@ -60,7 +60,7 @@ Note that a production deployment could <a href="https://docs.feast.dev/getting-
 
 ### Train Model
 
-Next we utilize PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">fit a simple LSTM model</a>:
+Next we utilize PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">fit a simple LSTM model</a> on the hourly temperature time series:
 
 ```
 pip install torch
