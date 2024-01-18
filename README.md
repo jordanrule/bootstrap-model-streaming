@@ -116,7 +116,7 @@ We have significantly improved on our RMSE, which is a demonstration of how util
 
 ### Serve Model
 
-Use <a href="https://mlflow.org/docs/latest/rest-api.html">MLFlow rest api</a> to serve.
+Use <a href="[https://mlflow.org/docs/latest/rest-api.html](https://mlflow.org/docs/latest/model-registry.html#serving-an-mlflow-model-from-model-registry)">MLflow Model Registry</a> to serve.
 
 ### Online Inference
 
