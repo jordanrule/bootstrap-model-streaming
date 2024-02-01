@@ -83,7 +83,7 @@ This is a good model as it generates a comparable RMSE between the train and tes
 
 ### Improve Model
 
-We utilize the <a href="https://github.com/Zhenye-Na/DA-RNN/tree/master">DA-RNN</a> model developed in "A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction" (arXiv preprint arXiv:1704.02971 (2017)) to try to improve on our initial model.
+We utilize the <a href="https://github.com/Zhenye-Na/DA-RNN/tree/master">DA-RNN</a> model developed in "[A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction](https://arxiv.org/pdf/1704.02971.pdf)" to try to improve on our initial model.
 
 ```
 wget -O darnn.py https://github.com/jordanrule/bootstrap-online-inference/raw/main/torch/darnn.py
