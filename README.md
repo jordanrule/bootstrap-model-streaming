@@ -110,7 +110,7 @@ Epochs:  9  Iterations:  1970  Loss:  1.1395469135817538
 Finished Training
 ```
 
-We have significantly improved on our RMSE, which is a demonstration of how utilizing SOTA models can improve on model accuracy.  We may want to take additional steps to ensure the RMSE numbers are comparable such as ensuring our train/test methodology is entirely consistent, but this model is fine as a prototype.  The next step is to deploy our model in a reproducible manner for online inference. 
+We have significantly improved on our RMSE, which is a demonstration of how utilizing SOTA models can improve on model accuracy.  Utilizing an even more advanced model such as a [transformer](https://arxiv.org/pdf/2001.08317.pdf) is left an exercise for the reader.  The next step is to deploy our model in a reproducible manner for online inference. 
 
 ## Deploy
 
