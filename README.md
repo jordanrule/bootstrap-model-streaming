@@ -110,7 +110,7 @@ Epochs:  9  Iterations:  1970  Loss:  1.1395469135817538
 Finished Training
 ```
 
-We have significantly improved our RMSE, which is a demonstration of how utilizing SOTA architectures can improve model accuracy.  Implementing a self-attention architecture such as a [transformer](https://arxiv.org/pdf/2202.07125.pdf) to further improve RMSE is left as an exercise for the reader.  The next step is to deploy our model in a reproducible manner for online inference.
+We have significantly improved our RMSE, which is a demonstration of how utilizing SOTA architectures can improve model accuracy.  Implementing a self-attention [transformer architecture](https://arxiv.org/pdf/2202.07125.pdf) to further improve RMSE is left as an exercise for the reader.  The next step is to deploy our model in a reproducible manner for online inference.
 
 ## Deploy
 
