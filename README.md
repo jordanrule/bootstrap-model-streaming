@@ -56,11 +56,11 @@ features = store.get_historical_features(
 )
  ```
 
-Note that a production deployment could <a href="https://docs.feast.dev/getting-started/concepts/feature-retrieval">utilize SQL</a> for better performance, but for our local deployment we will load the parquet file directly for training and return to our feature store for online inference.
+Note that a production deployment could utilize <a href="https://docs.feast.dev/getting-started/concepts/feature-retrieval">SQL</a> for better performance, but for our local deployment we will load the parquet file directly for training and return to our feature store for online inference.
 
 ### Train Model
 
-Next we utilize PyTorch to <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">fit a simple LSTM</a> on the hourly temperature time series:
+Next we utilize PyTorch to fit a simple <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">LSTM</a> on the hourly temperature time series:
 
 ```
 pip install torch
@@ -83,7 +83,7 @@ This is a good architecture as it generates a comparable RMSE between the train 
 
 ### Improve Model
 
-We utilize the <a href="https://github.com/Zhenye-Na/DA-RNN/tree/master">DA-RNN</a> architecture developed in "[A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction](https://arxiv.org/pdf/1704.02971.pdf)" to try to improve on our initial model.
+We utilize the <a href="https://github.com/Zhenye-Na/DA-RNN/tree/master">DA-RNN</a> architecture developed in "<a href="https://arxiv.org/pdf/1704.02971.pdf">A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction</a>" to try to improve on our initial model.
 
 ```
 wget -O darnn.py https://github.com/jordanrule/bootstrap-online-inference/raw/main/torch/darnn.py
@@ -110,7 +110,7 @@ Epochs:  9  Iterations:  1970  Loss:  1.1395469135817538
 Finished Training
 ```
 
-We have significantly improved on our RMSE, which is a demonstration of how utilizing SOTA architectures can improve on model accuracy.  Implementing an even more advanced architecture such as a [transformer](https://arxiv.org/pdf/2001.08317.pdf) is left as an exercise for the reader.  The next step is to deploy our model in a reproducible manner for online inference.
+We have significantly improved our RMSE, which is a demonstration of how utilizing SOTA architectures can improve model accuracy.  Implementing a self-attention architecture such as a [transformer](https://arxiv.org/pdf/2202.07125.pdf) to further improve RMSE is left as an exercise for the reader.  The next step is to deploy our model in a reproducible manner for online inference.
 
 ## Deploy
 
